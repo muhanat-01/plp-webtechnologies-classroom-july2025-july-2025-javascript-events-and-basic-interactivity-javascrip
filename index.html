@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Interactive Web Assignment</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🎉 Interactive Web Pages with JavaScript</h1>
+
+  <!-- Light/Dark Mode -->
+  <section>
+    <h2>Light/Dark Mode Toggle</h2>
+    <button id="themeToggle">Switch to Dark Mode</button>
+  </section>
+
+  <!-- Counter Game -->
+  <section>
+    <h2>Counter Game</h2>
+    <p>Score: <span id="counterValue">0</span></p>
+    <button id="incrementBtn">Increase</button>
+    <button id="resetBtn">Reset</button>
+  </section>
+
+  <!-- FAQ Section -->
+  <section>
+    <h2>FAQ Section</h2>
+    <div class="faq-item">
+      <button class="faq-question">What is JavaScript?</button>
+      <p class="faq-answer">JavaScript is a programming language used to make web pages interactive.</p>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question">What is DOM?</button>
+      <p class="faq-answer">The DOM (Document Object Model) is a tree structure that represents HTML elements.</p>
+    </div>
+  </section>
+
+  <!-- Dropdown Menu -->
+  <section>
+    <h2>Simple Dropdown Menu</h2>
+    <div class="dropdown">
+      <button id="dropdownBtn">Choose Option</button>
+      <ul id="dropdownMenu" class="dropdown-content">
+        <li>Option 1</li>
+        <li>Option 2</li>
+        <li>Option 3</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Tabbed Interface -->
+  <section>
+    <h2>Tabbed Interface</h2>
+    <div class="tabs">
+      <button class="tab-btn active" data-tab="tab1">Tab 1</button>
+      <button class="tab-btn" data-tab="tab2">Tab 2</button>
+      <button class="tab-btn" data-tab="tab3">Tab 3</button>
+    </div>
+    <div class="tab-content active" id="tab1">Content for Tab 1</div>
+    <div class="tab-content" id="tab2">Content for Tab 2</div>
+    <div class="tab-content" id="tab3">Content for Tab 3</div>
+  </section>
+
+  <!-- Form Validation -->
+  <section>
+    <h2>Registration Form</h2>
+    <form id="registerForm">
+      <label>Name: <input type="text" id="name"></label>
+      <small class="error" id="nameError"></small><br>
+
+      <label>Email: <input type="text" id="email"></label>
+      <small class="error" id="emailError"></small><br>
+
+      <label>Password: <input type="password" id="password"></label>
+      <small class="error" id="passwordError"></small><br>
+
+      <button type="submit">Register</button>
+    </form>
+    <p id="formSuccess" class="success"></p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
